@@ -1,4 +1,2 @@
 streamlit
-convert_from_bytes
-Image
 pytesseract
