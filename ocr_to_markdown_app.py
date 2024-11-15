@@ -19,6 +19,7 @@ def extract_text_from_pdf(pdf_file):
     ocr_results = {}
 
     # Convert PDF pages to images
+    poppler_path = "/usr/bin"  # Common path for poppler on Linux/Streamlit Cloud
     images = convert_from_bytes(pdf_file.read())
 
     for page_number, image in enumerate(images, start=1):
